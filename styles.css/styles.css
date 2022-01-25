@@ -12,6 +12,7 @@
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;   
 
+    --buttonColor: black;
 }
 html, body{
     padding: 0;
@@ -259,6 +260,7 @@ h6{font-size: 16px;}
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-bottom: 50px;
     padding-top: 50px;
+    gap: 100px;
 } 
 
 #skills{
@@ -267,9 +269,64 @@ h6{font-size: 16px;}
     background-color: var(--previewShadow);
 }
 
-#socialskills{
+.social-links{
+    display: grid;
+    align-content: center;
+    text-align: center;
+
+}
+
+#social_img{
     width: 100%;
 }
+
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 220px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.post{ 
+    display: 1px solid var(--borderColor);
+    box-shadow: 1px -3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -3px 5px 0px rgba(0,0,0,0.75); 
+
+}
+
+.thumbnail{
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+}
+
+.post-preview{
+    background-color: #fff;
+    padding: 13px;
+}
+
+.post-title{
+    color: black;
+    margin: 0;
+}
+
+.post-intro{
+    color: white;
+    font-size: 16px;
+}
+
+#submit-btn{
+   margin-top:10px;
+   width: 100%;
+   padding-top:10px;
+   padding-bottom:10px;
+   color: #fff;
+   background-color: #fff;
+   border: none;
+}
+
 
 @media screen and (max-width: 1200px){
     .main-container{
