@@ -14,10 +14,7 @@
 
 }
 html, body{
-    padding: 0;<div id="preview">
-    <h3>What I do</h3>
-    <p>Introduction on what I do ...</p>
-</div>
+    padding: 0;
     margin: 0;
 }
 
@@ -207,12 +204,41 @@ h6{font-size: 16px;}
 
 #preview{
     width: 300px;
-    border: 1.5px;
+    border: 1.5px solid #17a2b8;
     color: lightblue;
     background-color: var( --previewBg);
     padding: 15px;
 }
 
+.corner{
+     height: 7px;
+     width: 7px; 
+     border-radius: 50%;
+     border: 1.5px solid #17a2b8;
+     background-color: #fff;
+     position: absolute;
+}
+
+#corner-tl{
+    top: -5px;
+    left: -5px;
+
+}
+#corner-tr{
+    top: -5px;
+    right: -5px;
+    
+}
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+    
+}
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+    
+}
 
 @media screen and (max-width: 1200px){
     .main-container{
