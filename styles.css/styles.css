@@ -133,6 +133,9 @@ h6{font-size: 16px;}
 }
 
 .left-column{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 70px;
     grid-area: left-column;
     
 }
